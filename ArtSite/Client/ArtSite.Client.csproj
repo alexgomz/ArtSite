@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RazorLangVersion>3.0</RazorLangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Images\2020-03-30-ezio-by-cavalieredispade_orig.jpg" />
+    <Content Remove="wwwroot\Images\2020-05-06-mermay2020-by-cavalieredispade_orig.jpg" />
+    <Content Remove="wwwroot\Images\ac-voodoo-mama-surlestoits_orig.png" />
+    <Content Remove="wwwroot\Images\aveline-s_orig.jpg" />
+    <Content Remove="wwwroot\Images\comission12345.jpg" />
+    <Content Remove="wwwroot\Images\sig-2019-11-14-cover_orig.jpg" />
+    <Content Remove="wwwroot\Images\sigtumblr-ps5wzqkwsa1qaokr2-1280_orig.jpg" />
+    <Content Remove="wwwroot\Images\sketch12345.jpg" />
+    <Content Remove="wwwroot\Images\sketch8654.jpg" />
+    <Content Remove="wwwroot\Images\tumblr-pno37yoqv11qaokr2-640_orig.jpg" />
+    <Content Remove="wwwroot\Images\tumblr-pqxtab6czg1qaokr2-1280_orig.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Images\2020-03-30-ezio-by-cavalieredispade_orig.jpg" />
+    <None Include="wwwroot\Images\2020-05-06-mermay2020-by-cavalieredispade_orig.jpg" />
+    <None Include="wwwroot\Images\ac-voodoo-mama-surlestoits_orig.png" />
+    <None Include="wwwroot\Images\aveline-s_orig.jpg" />
+    <None Include="wwwroot\Images\comission12345.jpg" />
+    <None Include="wwwroot\Images\sig-2019-11-14-cover_orig.jpg" />
+    <None Include="wwwroot\Images\sigtumblr-ps5wzqkwsa1qaokr2-1280_orig.jpg" />
+    <None Include="wwwroot\Images\sketch12345.jpg" />
+    <None Include="wwwroot\Images\sketch8654.jpg" />
+    <None Include="wwwroot\Images\tumblr-pno37yoqv11qaokr2-640_orig.jpg" />
+    <None Include="wwwroot\Images\tumblr-pqxtab6czg1qaokr2-1280_orig.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="3.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Build" Version="3.2.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="3.2.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="System.Net.Http.Json" Version="3.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\ArtSite.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

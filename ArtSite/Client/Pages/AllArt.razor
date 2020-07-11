@@ -1,0 +1,33 @@
+﻿@page "/allart"
+@using ArtSite.Shared.Models
+@inject HttpClient Http 
+
+    <div class="container">
+        <div class="row row-cols-3">
+        @if (artworks != null)
+        {
+            @foreach (var artwork in artworks)
+            {
+                var source = "/Images/" + artwork.Name;
+                <div class="col-md-4">
+                <div class="card">
+                    <img src="@source" class="card-img-top" style="height:250px; width:100%;" />
+                </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>Accessing Data...</p>
+        }
+        </div>
+    </div>
+
+@code {
+    private List<Artwork> artworks;
+
+    protected override async Task OnInitializedAsync()
+    {
+        artworks = await Http.GetFromJsonAsync<List<Artwork>>("Artwork");
+    }
+}
